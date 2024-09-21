@@ -51,7 +51,7 @@ work:
     summary: |2-
       Developing software that removes vegetation from LiDAR data and tracks change history.
 
-  - position: Legal Team
+  - position: Legal Part
     company_name: Hiconsy Co., Ltd.
     company_url: https://www.hiconsy.com/
     company_logo: ''
