@@ -36,8 +36,6 @@ education:
     institution: Jeonbuk National University
     date_start: 2020-03-01
     summary: |
-      GPA: 3.8/4.5
-
       Courses included:
       - ML / AI
       - Other interesting things
