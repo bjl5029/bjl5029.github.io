@@ -35,7 +35,6 @@ education:
   - area: BSc Computer and Artificial Intelligence
     institution: Jeonbuk National University
     date_start: 2020-03-01
-    date_end: Not yet
     summary: |
       GPA: 3.8/4.5
 
