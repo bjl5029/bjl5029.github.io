@@ -56,8 +56,8 @@ work:
     company_name: Hiconsy Co., Ltd.
     company_url: https://www.hiconsy.com/
     company_logo: ''
-    date_start: 2020.01.01
-    date_end: 2021.03.01
+    date_start: 2020-01-01
+    date_end: 2021-03-01
     summary: |
       Worked on developing software solutions related to copyright
 
