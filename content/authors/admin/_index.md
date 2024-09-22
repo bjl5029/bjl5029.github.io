@@ -33,8 +33,9 @@ education:
     date_start: 2020-03-01
     summary: |
       Courses included:
+      - CS      
       - ML / AI
-      - Other interesting things
+      - Many interesting things
 
   - area: SW and AI Mentorship
     institution: Naver Connect Foundation
