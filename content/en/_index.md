@@ -37,6 +37,10 @@ sections:
       username: admin
   - block: awards
     content:
+      title: Projects
+      username: admin
+  - block: awards
+    content:
       title: Awards
       username: admin
   - block: languages
