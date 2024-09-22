@@ -82,7 +82,7 @@ skills:
       - name: C++
         description: ''
         percent: 40
-        icon: "custom/cpp"
+        icon: devicon/cplusplus
   - name: Some of my other interests
     color: '#eeac02'
     color_border: '#f0bf23'
@@ -94,11 +94,11 @@ skills:
       - name: Investment Strategies Using Alternative Data
         description: ''
         percent: 80
-        icon: "custom/stock"
+        icon: hero/currency-dollar
       - name: Peppertones
         description: ''
         percent: 80
-        icon: "custom/music"
+        icon: hero/musical-note
 
 languages:
   - name: Korean
