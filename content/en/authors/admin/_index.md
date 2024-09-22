@@ -6,10 +6,6 @@ title: Baek Jeong Ryeol
 first_name: JeongRyeol
 last_name: Baek
 
-# Status emoji
-status:
-  icon: ☕️
-
 # Is this the primary user of the site?
 superuser: true
 
@@ -17,7 +13,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Chief Scientist
+role: Student
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -34,9 +30,8 @@ profiles:
 
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - DataScience/ML/AI
+  - Investment Strategies Using Alternative Data
 
 education:
   - area: BSc Computer and Artificial Intelligence
@@ -145,4 +140,4 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I am currently studying Computer Science and Big Data/AI at JBNU and working at DPRE.
