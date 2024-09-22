@@ -82,7 +82,7 @@ skills:
       - name: C++
         description: ''
         percent: 40
-        icon: cpp-svgrepo-com
+        icon: cpp
   - name: Some of my other interests
     color: '#eeac02'
     color_border: '#f0bf23'
@@ -90,15 +90,15 @@ skills:
       - name: Football
         description: ''
         percent: 100
-        icon: ball
+        icon: football
       - name: Investment Strategies Using Alternative Data
         description: ''
         percent: 80
-        icon: stock-down-svgrepo-com
+        icon: stock.svg
       - name: Peppertones
         description: ''
         percent: 80
-        icon: music
+        icon: music.svg
         
 languages:
   - name: Korean
