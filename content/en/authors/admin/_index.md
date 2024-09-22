@@ -46,8 +46,7 @@ education:
     institution: Euclidsoft Co., Ltd.
     date_start: 2022-08-01
     date_end: 2023-01-01
-    summary: |
-      It wasn’t fun. Don’t ask for details.
+
 
 work:
   - position: Software Engineer
@@ -55,8 +54,6 @@ work:
     company_url: http://dpre.co.kr/
     company_logo: ''
     date_start: 2024-01-07
-    summary: |2-
-      Developing software that removes vegetation from LiDAR data and tracks change history.
 
   - position: Legal Part
     company_name: Hiconsy Co., Ltd.
@@ -64,8 +61,7 @@ work:
     company_logo: ''
     date_start: 2020-01-01
     date_end: 2021-03-01
-    summary: |
-      Worked on developing software solutions related to copyright
+
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -106,7 +102,14 @@ languages:
     percent: 100
   - name: English
     percent: 50
-
+    
+projects:
+  - title: 모바일 앱 개발 해커톤
+    date: '2023-08-30'
+    awarder: 전남대학교
+    summary: |
+      장려상 수상
+      
 # Awards.
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
