@@ -69,7 +69,7 @@ work:
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
-  - name: Skills
+  - name: Technical Skills
     items:
       - name: Python
         description: ''
@@ -82,7 +82,7 @@ skills:
       - name: C++
         description: ''
         percent: 40
-        icon: devicon/cpp
+        icon: cpp-svgrepo-com
   - name: Some of my other interests
     color: '#eeac02'
     color_border: '#f0bf23'
@@ -94,7 +94,7 @@ skills:
       - name: Investment Strategies Using Alternative Data
         description: ''
         percent: 80
-        icon: money
+        icon: stock-down-svgrepo-com
       - name: Peppertones
         description: ''
         percent: 80
