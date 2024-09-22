@@ -36,9 +36,21 @@ education:
       - ML / AI
       - Other interesting things
 
+  - area: SW and AI Mentorship, Naver Connect Foundation
+    institution: Naver Connect Foundation
+    date_start: 2023-01-11
+    date_end: 2023-03-10
+
+  - area: DataScience Bootcamp
+    institution: Euclidsoft Co., Ltd.
+    date_start: 2022-08-01
+    date_end: 2023-01-01
+    summary: |
+      It wasn’t fun. Don’t ask for details.
+      
 work:
   - position: Software Engineer
-    company_name: DPRE
+    company_name: DPRE Co., Ltd.
     company_url: http://dpre.co.kr/
     company_logo: ''
     date_start: 2024-01-07
@@ -96,33 +108,33 @@ awards:
   - title: 제2회 재난안전데이터 활용 창업경진대회
     url: https://www.mois.go.kr/synap/skin/doc.html?fn=BBS_2024050104084346001&rs=/synapFile/202409/&synapUrl=%2Fsynap%2Fskin%2Fdoc.html%3Ffn%3DBBS_2024050104084346001%26rs%3D%2FsynapFile%2F202409%2F&synapMessage=%EC%A0%95%EC%83%81
     date: '2024-08-05'
-    awarder: 행정안전부장관
+    awarder: 행정안전부
     summary: |
-      제2회 재난안전데이터 활용 창업경진대회에서 행정안전부장관상을 수상했습니다.
+      행정안전부 장관상 수상
 
   - title: GREAT Chat Gpt 활용 아이디어 경진대회
     date: '2024-02-02'
     awarder: 지역선도대학육성사업단
     summary: |
-      GREAT Chat Gpt 활용 아이디어 경진대회에서 장려상을 수상했습니다.
+      장려상 수상
 
   - title: 제1회 SW 창업 아이디어 경진대회
     date: '2023-12-21'
     awarder: 전북대학교
     summary: |
-      전북대학교 주최 제1회 SW 창업 아이디어 경진대회에서 장려상을 수상했습니다,
+      장려상 수상
 
   - title: 제3회 소외계층을 위한 AI활용 아이디어 공모전
     date: '2023-12-20'
-    awarder: 교육부장관
+    awarder: 교육부
     summary: |
-      제3회 소외계층을 위한 AI활용 아이디어 공모전에서 교육부장관상을 수상했습니다.
+      교육부 장관상 수상
 
   - title: 모바일 앱 개발 해커톤
     date: '2023-08-30'
     awarder: 전남대학교
     summary: |
-      전남대학교 주최 모바일 앱 개발 해커톤 캠프에서 장려상을 수상했습니다.
+      장려상 수상
 ---
 
 I am currently studying Computer Science and Big Data/AI at JBNU and working at DPRE.
