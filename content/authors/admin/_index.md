@@ -63,38 +63,30 @@ skills:
         description: ''
         percent: 80
         icon: devicon/python
-      - name: RStudio
-        description: ''
-        percent: 100
-        icon: devicon/rstudio
       - name: PyTorch
         description: ''
-        percent: 40
+        percent: 60
         icon: devicon/pytorch
-  - name: Hobbies
+      - name: C++
+        description: ''
+        percent: 40
+        icon: devicon/cpp
+  - name: Hobbies and Interests
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
-        description: ''
-        percent: 60
-        icon: person-simple-walk
-      - name: Cats
+      - name: Football
         description: ''
         percent: 100
-        icon: cat
-      - name: Photography
+        icon: ball
+      - name: Investment Strategies Using Alternative Data
         description: ''
         percent: 80
-        icon: camera
-
-languages:
-  - name: English
-    percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
+        icon: money
+      - name: Peppertones
+        description: ''
+        percent: 80
+        icon: music
 
 # Awards.
 #   Add/remove as many awards below as you like.
@@ -128,4 +120,4 @@ awards:
       Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
-I am currently studying Computer Science and Big Data/AI at JBNU, and I am working at DPRE.
+I am currently studying Computer Science and Big Data/AI at JBNU and working at DPRE.
