@@ -102,14 +102,7 @@ languages:
     percent: 100
   - name: English
     percent: 50
-    
-projects:
-  - title: 모바일 앱 개발 해커톤
-    date: '2023-08-30'
-    awarder: 전남대학교
-    summary: |
-      장려상 수상
-      
+
 # Awards.
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
