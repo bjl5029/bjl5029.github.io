@@ -36,7 +36,7 @@ education:
       - ML / AI
       - Other interesting things
 
-  - area: SW and AI Mentorship, Naver Connect Foundation
+  - area: SW and AI Mentorship
     institution: Naver Connect Foundation
     date_start: 2023-01-11
     date_end: 2023-03-10
@@ -69,7 +69,7 @@ work:
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
-  - name: Technical Skills
+  - name: Skills
     items:
       - name: Python
         description: ''
@@ -82,8 +82,8 @@ skills:
       - name: C++
         description: ''
         percent: 40
-        icon: devicon/language-cpp
-  - name: Hobbies and Interests
+        icon: devicon/cpp
+  - name: Some of my other interests
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
@@ -99,6 +99,12 @@ skills:
         description: ''
         percent: 80
         icon: music
+        
+languages:
+  - name: Korean
+    percent: 100
+  - name: English
+    percent: 50
 
 # Awards.
 #   Add/remove as many awards below as you like.
