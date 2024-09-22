@@ -7,8 +7,7 @@ en:
   languageCode: en-us
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   #contentDir: content/en
-kr:
-  languageCode: kr
+
 # Uncomment the lines below to configure your website in a second language.
 #zh:
 #  languageCode: zh-Hans
@@ -21,3 +20,16 @@ kr:
 #      - name: 传
 #        url: '#about'
 #        weight: 1
+
+# Add Korean language
+ko:
+  languageCode: ko-kr
+  contentDir: content/ko
+  title: 한국어 웹사이트 제목...
+  params:
+    description: 한국어 사이트 설명...
+  menu:
+    main:
+      - name: 소개
+        url: '#about'
+        weight: 1
