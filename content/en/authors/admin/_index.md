@@ -85,7 +85,7 @@ skills:
       - name: Football
         description: ''
         percent: 100
-        icon: "football"
+        icon: "icons/football"
       - name: Investment Strategies Using Alternative Data
         description: ''
         percent: 80

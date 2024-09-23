@@ -1,9 +1,9 @@
 ---
-title: APAP
+title: Abnormal Pattern Alarm Platform
 date: 2024-09-02
 external_link: https://github.com/APAP-ICT
 ---
 
-Abnormal Pattern Alarm Platform
+Developed with support from Hanium.
 
 <!--more-->
