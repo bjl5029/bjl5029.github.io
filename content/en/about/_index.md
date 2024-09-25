@@ -5,11 +5,24 @@ date: 2024-03-25
 type: landing
 
 sections:
-
-  - block: features
+  - block: resume-biography-3
     content:
-      title: <span style="font-size:75%">Medical AI & Computational Science (MACS) Lab </span>
-      text: <span style="font-size:110%">전북대학교 의료 AI 및 계산 수학 연구실 홈페이지에 오신 것을 환영합니다.</span>
+      # Choose a user profile to display (a folder name within `content/authors/`)
+      username: admin
+      text: ""
+      # Show a call-to-action button under your biography? (optional)
+    design:
+      css_class: dark
+      background:
+        color: black
+        image:
+          # Add your image background to `assets/media/`.
+          filename: stacked-peaks.svg
+          filters:
+            brightness: 1.0
+          size: cover
+          position: center
+          parallax: false
 
   - block: slider
     content:
