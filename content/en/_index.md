@@ -29,7 +29,7 @@ sections:
           parallax: false
   - block: markdown
     content:
-      file: "experience.md"
+      file: "\authors\admin\_index.md"
       text: ''
     design:
       view: compact 
