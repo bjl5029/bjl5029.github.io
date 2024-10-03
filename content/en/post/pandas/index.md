@@ -1,10 +1,10 @@
 ---
-title: AI Hub 데이터 bounding box 변환(json to txt)
+title: Pandas 자주 쓰이는 메소드 정리
 date: 2023-10-03
 authors:
   - admin
 tags:
-  - AI
+  - Pandas
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com)'  
 ---
@@ -12,122 +12,196 @@ image:
 ## AI Hub에서 제공되는 데이터셋의 bounding box 좌표를 yolo에서 사용하는 형태로 변환
 
 ```
-import re
-import os
- 
-# 이미지 파일들 상위 디렉토리
-input_dir = 'C:\yolov5\새 폴더'
- 
-file_list = os.listdir(input_dir)
- 
-json_name_list = [file for file in file_list if file.endswith('.Json')]
- 
-for i in range(len(json_name_list)):
-    json_name_list[i] = input_dir + '/' + json_name_list[i]
- 
-for i in json_name_list:
-    try:
-        with open(i, 'r', encoding='UTF-8') as file:
-            data = file.read().replace('\n', '')
-        coord_list = list(map(int, re.findall(r'\d+', data.split('BOX')[1].strip())))
-        for k in range(4):
-            del coord_list[k]
-        coord_list[1], coord_list[2] = coord_list[2], coord_list[1]
-        size = list(map(int, (re.findall(r'\d+\*\d+', data)[0]).split('*')))
-        category = re.findall('[가-힣]+', data.split('DETAILS')[1].split(',')[0])[0]
- 
- 
-        def convert(size, coord_list):
-            dw = 1. / size[0]
-            dh = 1. / size[1]
-            x = (coord_list[0] + coord_list[1]) / 2.0
-            y = (coord_list[2] + coord_list[3]) / 2.0
-            w = coord_list[1] - coord_list[0]
-            h = coord_list[3] - coord_list[2]
-            x = x * dw
-            w = w * dw
-            y = y * dh
-            h = h * dh
-            return (x, y, w, h)
- 
- 
-        yolo_style = list(convert(size, coord_list))
-        yolo_style.insert(0, category)
- 
-        result = ' '.join(map(str, yolo_style))
-        output_file_name = i.split('.')[0] + '.txt'
-        save_txt = open(output_file_name, 'w')
-        save_txt.write(result)
-        save_txt.close()
- 
-    except:
-        print('오류')
-        break
+df.info()
 ```
 
-혹시 몰라서...
+### 컬럼 형변환
 
 ```
-import re
-import os
- 
-# Json 파일들 상위 디렉토리
-input_dir = 'C:\PythonProjects\R.Free'
- 
- 
-def convert(size, coord_list):
-    dw = 1. / size[0]
-    dh = 1. / size[1]
-    x = (coord_list[0] + coord_list[1]) / 2.0
-    y = (coord_list[2] + coord_list[3]) / 2.0
-    w = coord_list[1] - coord_list[0]
-    h = coord_list[3] - coord_list[2]
-    x = x * dw
-    w = w * dw
-    y = y * dh
-    h = h * dh
-    return (x, y, w, h)
- 
-file_list = os.listdir(input_dir)
- 
-json_name_list = [file for file in file_list if file.endswith('.json')]
- 
-for i in range(len(json_name_list)):
-    json_name_list[i] = input_dir + '/' + json_name_list[i]
- 
-count = 0
- 
-for i in json_name_list:
-    output_file_name = i.split('.')[0] + '.txt'
-    with open(i, 'r', encoding='UTF-8') as file:
-        data = file.read().replace('\n', '')
-    count_data = data.count('\"data\"')
-    height = re.findall('\d+', data.split('height')[1].split(',')[0])
-    width = re.findall('\d+', data.split('width')[1].split(',')[0])
-    size = [width[0], height[0]]
-    size =  list(map(int, size))
-    data = data.split("bbox")[1]
-    data_list = data.split("}")
-    result = []
-    for j in range(count_data):
-        temp_data = data_list[j]
-        data_name = temp_data.split('\"data\":')[1].split(',')[0]
-        x_list = temp_data.split(',      \"y\": ')[0].split('"x": ')[1].replace('[', '').replace(']', '').replace(' ', '').split(',')
-        y_list = temp_data.split(',      \"y\": ')[1].replace('[', '').replace(']', '').replace(' ', '').split(',')
-        coord_list = [x_list[0], x_list[-1], y_list[0], y_list[-1]]
-        coord_list =  list(map(int, coord_list))
-        yolo_style = list(convert(size, coord_list))
-        yolo_style.insert(0, data_name)
-        result.append(' '.join(map(str, yolo_style)))
- 
-    for n in range(len(result)):
-        result[n] = result[n].strip()
- 
- 
-    with open(output_file_name, 'w+') as lf:
-        lf.write('\n'.join(result))
- 
-    with open(output_file_name, 'r') as lf:
-        readList = lf.readlines()
+df = df.astype({'month' : 'int', 'week' : 'int'})
 ```
 
+### 행 자르기
+
+```
+df = df[1:10]
+```
+
+### 결측치 제거
+
+```
+df = df.dropna(axis = 0) 행 전체 제거
+df = df.dropna(axis = 1) 열 전체 제거
+df = df.dropna(subset = ['컬럼명'], how = 'any', axis = 0) 특정 컬럼에 nan있는 행 제거
+```
+
+### 컬럼명 변경
+
+```
+df.columns = ['컬럼명1', '컬럼명2', '컬럼명3'] 컬럼명 전부 써줘야 됨
+df.rename(columns = {'원래컬럼명' : '바꿀컬럼명'}, inplace = True) 지정 변경
+```
+
+### 컬럼 피쳐 항목 확인
+
+```
+print(pd['컬럼명'].unique())
+```
+
+### 레이블 인코딩
+
+```
+from sklearn.preprocessing import LabelEncoder
+df['컬럼명'] = LabelEncoder().fit_transform(df['컬럼명'].values)
+```
+
+### 원 핫 인코딩
+
+```
+temp = pd.get_dummies(df['컬럼명'])
+```
+
+### 데이터프레임 세로로 합치기 병합
+
+```
+result = pd.concat([df1, df2], axis = 0) join = 'inner/outer' 가능
+```
+
+### 데이터프레임 가로로 합치기 병합
+
+```
+result = pd.concat([df1, df2], axis = 1) join = 'inner/outer' 가능
+```
+
+### 데이터프레임 특정 키를 기준으로 합치기 병합
+
+```
+df_result = pd.merge(df1, df2, how = 'outer')
+```
+
+### 데이터프레임 인덱스 초기화
+
+```
+df.reset_index(drop = True, inplace = True)
+```
+
+### 컬럼을 인덱스로 사용
+
+```
+df.set_index('컬럼명', inplace=True)
+```
+
+### 특정 컬럼 제거
+
+```
+df.drop('컬럼명', axis = 1, inplace = True)
+```
+
+### 표준화(StandardScaler) 피쳐별 평균0 분산1 가우시안 정규분포인 넘파이 배열로 변환
+
+```
+from sklearn.preprocessing import StandardScaler
+scaler = StandardScaler()
+scaler.fit(df)
+df_scaled = scaler.transform(df)
+```
+
+### 정규화(MinMaxScaler) 피쳐별로 0~1 사이의 값으로 정규화
+
+```
+from sklearn.preprocessing import MinMaxScaler
+scaler = MinMaxScaler()
+scaler.fit(df)
+df_scaled = scaler.transform(df)
+```
+
+### ndarray <-> 데이터프레임 변환
+
+```
+arr = np.array(df)
+df = pd.DataFrame(data = arr)
+```
+
+### 0으로 채워진 n차원 배열 생성
+
+```
+arr = np.zeros()
+```
+
+### 넘파이 데이터 차원 확인
+
+```
+print(arr.shape)
+```
+
+### 데이터프레임 그룹화
+
+```
+pd.groupby(by = '컬럼명')
+pd.groupby(level = '인덱스')
+```
+
+### 위치 기반 인덱싱
+
+```
+df.iloc[2:5]
+```
+
+### 레이블 기반 인덱싱
+
+```
+df.loc['값 또는 컬럼명']
+```
+
+### 데이터 정렬
+
+```
+df.sort_values('컬럼명', ascending = True/False) 오름치순/내림차순
+```
+
+### 랜덤 표본 추출
+
+```
+temp_df = df.sample(frac = 0.5) 1/2 크기의 랜덤 표본 추출
+temp_df = df.sample(n = 10) 10줄의 랜덤 표본 추출
+```
+
+### 특정 표본 추출
+
+```
+temp_df = df.nlargest(n, 'value’) 개수, 기준값
+temp_df = df.nsmallest(n, 'value') 개수, 기준값
+temp_df = df.head(n) 맨 앞 몇개
+temp_df = df.tail(n) 맨 뒤 몇개
+```
+
+### 정규표현식 이용 추출
+
+```
+temp_df = df.filter(regex = 'regex')
+정규표현식
+'\.' : Matches strings containing a period '.'
+'문자열$' : '문자열'로 끝나는 값
+'^문자열' : '문자열'로 시작하는 값
+'^x[1-5]$' : x로 시작하고 1,2,3,4,5로 끝나는 값
+'^(?!Species$).*' : Matches strings except the string 'Species'
+```
+
+### 결측치 채우기
+
+```
+df.fillna(value) 널 값을 value로 치환.
+```
+
+### 상관계수
+
+```
+df.corr(method = 'pearson')
+df.corrwith(other_df, axis = 0, drop = False, method = 'pearson')
+method 종류 : pearson, kendall tou, spearman
+```
+
+### 메소드체이닝 예시
+
+```
+df['컬럼명'] = df['컬럼명'].strip.replace('바꾸고싶은 문자열', '바꿀 문자열').get([0])```
