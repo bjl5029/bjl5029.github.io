@@ -11,28 +11,37 @@ design:
 sections:
   - block: resume-biography-3
     content:
-      # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
       text: ""
-      # Show a call-to-action button under your biography? (optional)
     design:
       css_class: dark
       background:
         color: black
         image:
-          # Add your image background to `assets/media/`.
           filename: stacked-peaks.svg
           filters:
             brightness: 1.0
           size: cover
           position: center
           parallax: false
-  - block: markdown
+  - block: collection
+    id: experience
     content:
-      file: "/authors/admin/_index.md"
+      title: Experience
+      subtitle: ''
       text: ''
+      page_type: post  # experience는 post 타입으로 불러옴
+      count: 1         # 1개의 페이지만 불러오도록 설정
+      filters:
+        category: ""
+        tag: ""
+        exclude_featured: false
+        exclude_future: false
+        exclude_past: false
+      offset: 0
+      order: desc
     design:
-      view: compact 
+      view: date-title-summary
       spacing:
         padding: [0, 0, 0, 0]
 ---
