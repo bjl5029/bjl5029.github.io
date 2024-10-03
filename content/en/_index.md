@@ -30,8 +30,8 @@ sections:
       title: Experience
       subtitle: ''
       text: ''
-      page_type: post  # experience는 post 타입으로 불러옴
-      count: 1         # 1개의 페이지만 불러오도록 설정
+      page_type: author
+      count: 1
       filters:
         category: ""
         tag: ""
