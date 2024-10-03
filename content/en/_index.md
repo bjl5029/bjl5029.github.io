@@ -1,11 +1,9 @@
 ---
-# Leave the homepage title empty to use the site title
 title: ""
 date: 2022-10-24
 type: landing
 
 design:
-  # Default section spacing
   spacing: "6rem"
 
 sections:
@@ -24,13 +22,10 @@ sections:
           size: cover
           position: center
           parallax: false
-  - block: collection
+
+  - block: markdown
     content:
-      title: Experience
-      page_type: page  # page 타입 사용
-      count: 1
-      filters:
-        tag: "experience"  # experience 태그가 있는 페이지 필터링
+      file: "en/authors/admin/_index.md"
     design:
-      view: date-title-summary
+      view: compact
 ---
