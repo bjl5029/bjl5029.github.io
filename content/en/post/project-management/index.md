@@ -1,94 +1,66 @@
 ---
-title: ✅ Manage your projects
-summary: Easily manage your projects - create ideation mind maps, Gantt charts, todo lists, and more!
-date: 2023-10-23
+title: ✅ 달러인덱스와 환율의 상관계수 및 그래프 그리기
+summary: 달러인덱스와 환율 간 상관계수를 구하고, 그래프를 그리는 과정을 소개합니다.
+date: 2023-10-03
 authors:
   - admin
 tags:
-  - Hugo Blox
-  - Markdown
+  - Pandas
+  - Data Analysis
+  - Python
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com)'  
 ---
 
-Easily manage your projects - create ideation mind maps, Gantt charts, todo lists, and more!
+달러인덱스와 환율 간 상관계수를 구하고, 그래프를 그리는 과정을 소개합니다.
 
-## Ideation
+## 데이터 전처리
 
-Hugo Blox supports a Markdown extension for mindmaps.
+이 데이터셋은 달러인덱스와 환율의 일별 데이터를 기반으로 합니다.  
+이상치를 제거하기 위해 각 항목의 전일대비 변동률을 구하고, 박스플롯을 사용해 이상치를 처리합니다.
 
-Simply insert a Markdown code block labelled as `markmap` and optionally set the height of the mindmap as shown in the example below.
 
-Mindmaps can be created by simply writing the items as a Markdown list within the `markmap` code block, indenting each item to create as many sub-levels as you need:
 
-<div class="highlight">
-<pre class="chroma">
-<code>
-```markmap {height="200px"}
-- Hugo Modules
-  - Hugo Blox
-  - blox-plugins-netlify
-  - blox-plugins-netlify-cms
-  - blox-plugins-reveal
-```
-</code>
-</pre>
-</div>
+# 데이터 읽어오기
+dollar_index = pd.read_csv("달러인덱스.csv")  
+krw_dollar = pd.read_csv("환율.csv")
 
-renders as
+# 전일대비 변동률 계산 후 이상치 제거
+entire = pd.merge(dollar_index, krw_dollar, how="inner")  
+entire.dropna(inplace=True)
+```  
+</code>  
+</pre>  
+</div>  
 
-```markmap {height="200px"}
-- Hugo Modules
-  - Hugo Blox
-  - blox-plugins-netlify
-  - blox-plugins-netlify-cms
-  - blox-plugins-reveal
+## 상관계수 계산
+
+두 데이터 간의 상관계수를 피어슨 방법을 통해 계산합니다.
+
+```python  
+corr = entire.corr(method="pearson")  
+print(corr)  
 ```
 
-## Diagrams
+## 그래프 그리기
 
-Hugo Blox supports the _Mermaid_ Markdown extension for diagrams.
+x축을 날짜로 설정하고, y축에 달러인덱스와 환율을 각각 표시한 그래프를 그립니다.
 
-An example **Gantt diagram**:
 
-    ```mermaid
-    gantt
-    section Section
-    Completed :done,    des1, 2014-01-06,2014-01-08
-    Active        :active,  des2, 2014-01-07, 3d
-    Parallel 1   :         des3, after des1, 1d
-    Parallel 2   :         des4, after des1, 1d
-    Parallel 3   :         des5, after des3, 1d
-    Parallel 4   :         des6, after des4, 1d
-    ```
+## 결과
 
-renders as
-
-```mermaid
-gantt
-section Section
-Completed :done,    des1, 2014-01-06,2014-01-08
-Active        :active,  des2, 2014-01-07, 3d
-Parallel 1   :         des3, after des1, 1d
-Parallel 2   :         des4, after des1, 1d
-Parallel 3   :         des5, after des3, 1d
-Parallel 4   :         des6, after des4, 1d
-```
+이 그래프는 달러인덱스와 환율 간의 관계를 시각화한 것입니다.  
+상관계수를 통해 두 변수 간의 관계를 확인할 수 있습니다.
 
 ## Todo lists
 
-You can even write your todo lists in Markdown too:
+이 프로젝트에서 처리해야 할 항목들:
 
-```markdown
-- [x] Write math example
-  - [x] Write diagram example
-- [ ] Do something else
+```markdown  
+- [x] 데이터 전처리  
+- [x] 상관계수 계산  
+- [ ] 그래프 최적화  
 ```
 
-renders as
-
-- [x] Write math example
-  - [x] Write diagram example
-- [ ] Do something else
-
 ## Did you find this page helpful? Consider sharing it 🙌
+
