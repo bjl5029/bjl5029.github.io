@@ -9,7 +9,7 @@ image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com)'  
 ---
 
-## AI Hub에서 제공되는 데이터셋의 bounding box 좌표를 yolo에서 사용하는 형태로 변환
+### 정보 확인하기
 
 ```
 df.info()
