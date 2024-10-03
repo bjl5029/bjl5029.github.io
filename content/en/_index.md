@@ -25,7 +25,7 @@ sections:
 
   - block: experience
     content:
-      title: Experience
+      title: Biography
       date_format: Jan 2006
       items:
         - title: Software Engineer
