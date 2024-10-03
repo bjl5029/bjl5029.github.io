@@ -25,23 +25,12 @@ sections:
           position: center
           parallax: false
   - block: collection
-    id: experience
     content:
       title: Experience
-      subtitle: ''
-      text: ''
-      page_type: author
+      page_type: page  # page 타입 사용
       count: 1
       filters:
-        category: ""
-        tag: ""
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-      offset: 0
-      order: desc
+        tag: "experience"  # experience 태그가 있는 페이지 필터링
     design:
       view: date-title-summary
-      spacing:
-        padding: [0, 0, 0, 0]
 ---
