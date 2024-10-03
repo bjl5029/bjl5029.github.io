@@ -1,10 +1,17 @@
 ---
 # Display name
-title: Baek Jeong Ryeol
+title: Yim Seong Hyuk
+
+# Name pronunciation (optional)
+# name_pronunciation: Yim seonghyuk
 
 # Full name (for SEO)
-first_name: JeongRyeol
-last_name: Baek
+# first_name: Yim
+# last_name: seonghyuk
+
+# Status emoji
+# status:
+#   icon: ☕️
 
 # Is this the primary user of the site?
 superuser: true
@@ -17,49 +24,90 @@ role: Student
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: JBNU / DPRE
+  - name: JBNU
+    url: https://www.jbnu.ac.kr/en
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:bjl5029@gmail.com'
+    url: 'castle_h0326@jbnu.ac.kr'
     label: E-mail Me
+  - icon: brands/x
+    url: https://twitter.com/GetResearchDev
+  - icon: brands/instagram
+    url: https://www.instagram.com/glow_pluto/
   - icon: brands/github
-    url: https://github.com/bjl5029
-
+    url: https://github.com/highcastle01
+  # - icon: brands/linkedin
+  #   url: https://www.linkedin.com/
+  # - icon: academicons/google-scholar
+  #   url: https://scholar.google.com/
+  # - icon: academicons/orcid
+  #   url: https://orcid.org/
 
 interests:
-  - DataScience/ML/AI
-  - Investment Strategies Using Alternative Data
+  - Data mining
+  - CV
+  # - Artificial Intelligence
+  # - Computational Linguistics
+  # - Information Retrieval
 
 education:
-  - area: BSc Computer and Artificial Intelligence
-    institution: Jeonbuk National University
-    date_start: 2020-03-01
+  # - area: PhD Artificial Intelligence
+  #   institution: Stanford University
+  #   date_start: 2016-01-01
+  #   date_end: 2020-12-31
+  #   summary: |
+  #     Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
+  #   button:
+  #     text: 'Read Thesis'
+  #     url: 'https://example.com'
+  # - area: MEng Artificial Intelligence
+  #   institution: Massachusetts Institute of Technology
+  #   date_start: 2016-01-01
+  #   date_end: 2020-12-31
+  #   summary: |
+  #     GPA: 3.8/4.0
+
+  #     Courses included:
+  #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
+  #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
+  #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - area: Computer Science & AI
+    institution: JBNU
+    date_start: 2020-03-02
+    date_end: 2026-02-26
     summary: |
+      GPA: 4.0/4.5
+      
       Courses included:
-      - CS      
-      - ML / AI
-      - Many interesting things
-  - area: DataScience Bootcamp
-    institution: Euclidsoft Co., Ltd.
-    date_start: 2022-08-01
-    date_end: 2023-01-01
-
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
 work:
-  - position: Software Engineer
-    company_name: DPRE Co., Ltd.
-    company_url: http://dpre.co.kr/
+  - position: Director of Cloud Infrastructure
+    company_name: GenCoin
+    company_url: ''
     company_logo: ''
-    date_start: 2024-01-07
-
-  - position: Legal Part
-    company_name: Hiconsy Co., Ltd.
-    company_url: https://www.hiconsy.com/
+    date_start: 2021-01-01
+    date_end: ''
+    summary: |2-
+      Responsibilities include:
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - position: Backend Software Engineer
+    company_name: X
+    company_url: ''
     company_logo: ''
-    date_start: 2020-01-01
-    date_end: 2021-03-01
+    date_start: 2016-01-01
+    date_end: 2020-12-31
+    summary: |
+      Responsibilities include:
+      - Migrated infrastructure to a new data center
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -69,75 +117,72 @@ skills:
       - name: Python
         description: ''
         percent: 80
-        icon: devicon/python
-      - name: PyTorch
+        icon: code-bracket
+      - name: Data Science
         description: ''
-        percent: 60
-        icon: devicon/pytorch
-      - name: C++
+        percent: 100
+        icon: chart-bar
+      - name: SQL
         description: ''
         percent: 40
-        icon: devicon/cplusplus
-  - name: Some of my other interests
+        icon: circle-stack
+  - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Football
+      - name: Concert
         description: ''
-        percent: 100
-        icon: "icons/football"
-      - name: Investment Strategies Using Alternative Data
+        percent: 90
+        icon: person-simple-walk
+      - name: Watching Soccer
         description: ''
-        percent: 80
-        icon: hero/currency-dollar
-      - name: Peppertones
+        percent: 60
+        icon: cat
+      - name: Photography
         description: ''
-        percent: 80
-        icon: hero/musical-note
+        percent: 40
+        icon: camera
 
 languages:
   - name: Korean
     percent: 100
   - name: English
-    percent: 50
+    percent: 60
+  - name: Chinese
+    percent: 25
 
 # Awards.
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
-  - title: 제2회 재난안전데이터 활용 창업경진대회
-    url: https://www.mois.go.kr/synap/skin/doc.html?fn=BBS_2024050104084346001&rs=/synapFile/202409/&synapUrl=%2Fsynap%2Fskin%2Fdoc.html%3Ffn%3DBBS_2024050104084346001%26rs%3D%2FsynapFile%2F202409%2F&synapMessage=%EC%A0%95%EC%83%81
-    date: '2024-08-05'
-    awarder: 행정안전부
+  - title: Neural Networks and Deep Learning
+    url: https://www.coursera.org/learn/neural-networks-deep-learning
+    date: '2023-11-25'
+    awarder: Coursera
+    icon: coursera
     summary: |
-      행정안전부 장관상 수상
-
-  - title: GREAT Chat Gpt 활용 아이디어 경진대회
-    date: '2024-02-02'
-    awarder: 지역선도대학육성사업단
+      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
+  - title: Blockchain Fundamentals
+    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
+    date: '2023-07-01'
+    awarder: edX
+    icon: edx
     summary: |
-      장려상 수상
-
-  - title: 제1회 SW 창업 아이디어 경진대회
-    date: '2023-12-21'
-    awarder: 전북대학교
+      Learned:
+      - Synthesize your own blockchain solutions
+      - Gain an in-depth understanding of the specific mechanics of Bitcoin
+      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
+  - title: 'Object-Oriented Programming in R'
+    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
+    certificate_url: https://www.datacamp.com
+    date: '2023-01-21'
+    awarder: datacamp
+    icon: datacamp
     summary: |
-      장려상 수상
-
-  - title: 제3회 소외계층을 위한 AI활용 아이디어 공모전
-    date: '2023-12-20'
-    awarder: 교육부
-    summary: |
-      교육부 장관상 수상
-
-  - title: 모바일 앱 개발 해커톤
-    date: '2023-08-30'
-    awarder: 전남대학교
-    summary: |
-      장려상 수상
+      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
 ## About Me
 
-I am currently studying Computer Science and Big Data/AI at JBNU and working at DPRE.
+Hello. I am Yim Seong-hyuk, a third-year student in the Department of Computer and Artificial Intelligence at Jeonbuk National University. This page contains a brief description of my degree, contact information, and projects I have worked on. Thank you for visiting and have a nice day.
