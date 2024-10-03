@@ -1,11 +1,13 @@
 ---
-title: Recent & Upcoming Events
+title: 최근 이력
+cms_exclude: true
+#url: talk
 
-# Listing view
-view: compact
+# View
+view: card
 
-# Optional header image (relative to `assets/media/` folder).
-banner:
+# Optional cover image (relative to `assets/media/` folder).
+image:
   caption: ''
-  image: ''
+  filename: ''
 ---

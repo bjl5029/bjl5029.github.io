@@ -1,11 +1,12 @@
 ---
-title: Publications
+title: 게시판
+cms_exclude: true
 
-# Listing view
-view: community/custom_compact
+# View.
+view: citation
 
-# Optional banner image (relative to `assets/media/` folder).
+# Optional header image (relative to `static/media/` folder).
 banner:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
-  image: 'researchpaper.jpg'
+  caption: ''
+  image: ''
 ---
