@@ -33,6 +33,7 @@ type: landing
     </div>
 
   </div>
+</div>
 </section>
 
 <style>
