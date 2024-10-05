@@ -3,35 +3,16 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: 백정렬 # Website name
-image:
-  filename: "me.jpg"
-  caption: "Image credit: [**Unsplash**](https://unsplash.com)"
-baseURL: 'https://bjl5029.github.io/' # Website URL
-
-
-description: "백정렬의 resume임."
-
-# Keywords for search engines
-keywords: [ "" ]
-
-# Author name
-author: "백정렬"
-
-# Open Graph settings (for social media previews)
-params:
-  description: "나는 백정렬"
-  author: "백정렬"
-  ogImage: "me.jpg"
-  ogType: "website"
-  ogTitle: "백정렬을 소개한다."
-
+# Website name
+title: Hugo Academic CV Theme
+# Website URL
+baseURL: 'https://example.com/'
 
 ############################
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: ko
+defaultContentLanguage: en
 hasCJKLanguage: false
 defaultContentLanguageInSubdir: false
 removePathAccents: true
@@ -39,6 +20,7 @@ removePathAccents: true
 ############################
 ## ADVANCED
 ############################
+
 build:
   writeStats: true
 enableGitInfo: false
@@ -47,41 +29,31 @@ paginate: 10
 enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
-ignoreFiles: [ \.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$ ]
+ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
 permalinks:
   authors: '/author/:slug/'
-  tags: '/tag/:slug/'
-  categories: '/category/:slug/'
-  publication_types: '/publication-type/:slug/'
 disableAliases: true
 outputs:
-  home: [ HTML, RSS, JSON, WebAppManifest, headers, redirects ]
-  section: [ HTML, RSS ]
+  home: [HTML, RSS, headers, redirects, backlinks]
+  section: [HTML, RSS]
 imaging:
   resampleFilter: lanczos
-  quality: 75
+  quality: 80
   anchor: smart
 timeout: 600000
 taxonomies:
-  tag: tags
-  category: categories
-  publication_type: publication_types
   author: authors
+  tag: tags
+  publication_type: publication_types
 markup:
   _merge: deep
-related:
-  threshold: 80
-  includeNewer: true
-  toLower: true
-  indices:
-    - name: tags
-      weight: 100
-    - name: categories
-      weight: 70
+  highlight:
+    lineNos: false
+  goldmark:
+    renderer:
+      unsafe: true
+
 security:
   _merge: deep
 sitemap:
-  filename: sitemap.xml
-  changefreq: "daily"
-  priority: 0.5
-
+  _merge: deep
