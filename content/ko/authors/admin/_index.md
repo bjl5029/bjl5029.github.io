@@ -29,64 +29,10 @@ education:
   courses:
     - course: 전북대학교 컴퓨터인공지능학부(재학)
       institution: 전북대학교
-      year: 2020 - 2025
-    - course: 고등학교(졸업)
+      year: 2020 - 현재
+    - course: 대전가오고등학교(졸업)
       institution: 대전가오고등학교
       year: 2016 - 2019
-
-work:
-  - position: Software Engineer
-    company_name: DPRE Co., Ltd.
-    company_url: http://dpre.co.kr/
-    company_logo: ''
-    date_start: 2024-01-07
-
-  - position: Legal Part
-    company_name: Hiconsy Co., Ltd.
-    company_url: https://www.hiconsy.com/
-    company_logo: ''
-    date_start: 2020-01-01
-    date_end: 2021-03-01
-    
-# Skills
-# Add your own SVG icons to `assets/media/icons/`
-skills:
-  - name: Technical Skills
-    items:
-      - name: Python
-        description: ''
-        percent: 80
-        icon: devicon/python
-      - name: PyTorch
-        description: ''
-        percent: 60
-        icon: devicon/pytorch
-      - name: C++
-        description: ''
-        percent: 40
-        icon: devicon/cplusplus
-  - name: Some of my other interests
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Football
-        description: ''
-        percent: 100
-        icon: "icons/football"
-      - name: Investment Strategies Using Alternative Data
-        description: ''
-        percent: 80
-        icon: hero/currency-dollar
-      - name: Peppertones
-        description: ''
-        percent: 80
-        icon: hero/musical-note
-
-languages:
-  - name: Korean
-    percent: 100
-  - name: English
-    percent: 50
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: 'bjl5029@gmail.com'
 

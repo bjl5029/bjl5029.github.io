@@ -21,42 +21,16 @@ sections:
 
   - block: experience
     content:
-      title: Education
+      title: Work
       items:
-        - title: 전북대학교 컴퓨터인공지능학부(재학)
-          description: 전북대학교 컴퓨터인공지능학부(it정보공학과)
-          date_start: '2020-03-02'
-        - title: 고등학교(졸업)
-          description: 대전가오고등학교
-          date_start: '2016-03-02'
-          date_end: '2019-12-31'
+        - title: 주식회사 디프리
+          description: 소프트웨어 엔지니어
+          date_start: '2024-01-01'
+        - title: 주식회사 하이컨시
+          description: 법무팀
+          date_start: '2020-01-01'
+          date_end: '2021-03-01'
 
-  - block: experience
-    content:
-      title: work
-      items:
-        - position: Director of Cloud Infrastructure
-          company_name: GenCoin
-          company_url: ''
-          company_logo: ''
-          date_start: 2021-01-01
-          date_end: ''
-          summary: |2-
-            Responsibilities include:
-            - lorem ipsum dolor sit amet, consectetur adipiscing elit
-            - lorem ipsum dolor sit amet, consectetur adipiscing elit
-            - lorem ipsum dolor sit amet, consectetur adipiscing elit
-        - position: Backend Software Engineer
-          company_name: X
-          company_url: ''
-          company_logo: ''
-          date_start: 2016-01-01
-          date_end: 2020-12-31
-          summary: |
-            Responsibilities include:
-            - Migrated infrastructure to a new data center
-            - lorem ipsum dolor sit amet, consectetur adipiscing elit
-            - lorem ipsum dolor sit amet, consectetur adipiscing elit
 
   - block: slider
     content:
