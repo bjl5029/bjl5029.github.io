@@ -20,8 +20,6 @@ sections:
           parallax: false
 
 
-
-
   - block: collection
     content:
       id: section-1

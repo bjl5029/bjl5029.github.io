@@ -21,7 +21,7 @@ organizations:
   - name: JBNU / DPRE
 
 interests:
-  - 데이터과학 / 인공지능  
+  - 데이터과학 / 인공지능
   - 공간정보
   - 세상의 모든 흥미로운 것들
 
@@ -34,17 +34,61 @@ education:
       institution: 대전가오고등학교
       year: 2016 - 2019
 
-# Social/Academic Networking
-# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
-#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "#contact" for contact widget.
-social:
-  - icon: github
-    icon_pack: fab
-    link: https://github.com/bjl5029
+work:
+  - position: Software Engineer
+    company_name: DPRE Co., Ltd.
+    company_url: http://dpre.co.kr/
+    company_logo: ''
+    date_start: 2024-01-07
 
+  - position: Legal Part
+    company_name: Hiconsy Co., Ltd.
+    company_url: https://www.hiconsy.com/
+    company_logo: ''
+    date_start: 2020-01-01
+    date_end: 2021-03-01
+    
+# Skills
+# Add your own SVG icons to `assets/media/icons/`
+skills:
+  - name: Technical Skills
+    items:
+      - name: Python
+        description: ''
+        percent: 80
+        icon: devicon/python
+      - name: PyTorch
+        description: ''
+        percent: 60
+        icon: devicon/pytorch
+      - name: C++
+        description: ''
+        percent: 40
+        icon: devicon/cplusplus
+  - name: Some of my other interests
+    color: '#eeac02'
+    color_border: '#f0bf23'
+    items:
+      - name: Football
+        description: ''
+        percent: 100
+        icon: "icons/football"
+      - name: Investment Strategies Using Alternative Data
+        description: ''
+        percent: 80
+        icon: hero/currency-dollar
+      - name: Peppertones
+        description: ''
+        percent: 80
+        icon: hero/musical-note
+
+languages:
+  - name: Korean
+    percent: 100
+  - name: English
+    percent: 50
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: 'bjl5029@gmail..com'
+email: 'bjl5029@gmail.com'
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
