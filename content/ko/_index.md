@@ -23,7 +23,7 @@ sections:
   - block: markdown
     content:
       title: About me
-      text: |- 
+      text: |-
         <span class="justified-text" style="color: gray;text-align: justify;">
         컄ㅋㅋㅋ.
         </span>
@@ -34,30 +34,13 @@ sections:
       title: "<span style=\"font-size:75%\">백정렬 관심사</span>"
       text: "나는 어디에 관심 있느냐<br><br>"
       items:
-        - name: 인공지능(AI)
-          icon: brain
-          icon_pack: fas
-          description: "<span style=\"font-size:90%\">기계학습, 딥러닝, RNN,FCN 컴퓨터 비전 등등</span>"
-        - name: 런닝
-          icon: running
-          icon_pack: fas
-          description: "<span style=\"font-size:90%\">하루에 10km씩 런닝하며 체중감소</span>"
-        - name: 노래
-          icon: music
-          icon_pack: fas
-          description: "<span style=\"font-size:90%\">꾀꼬리 같은 맑은 보이스의 소유자로서, 혼코노러버</span>"
-        - name: 의료
-          icon: hospital
-          icon_pack: fas
-          description: "<span style=\"font-size:90%\">의료지식을 공부하며 의료 인공지능과의 결합 고민</span>"
-        - name: 주식
-          icon: chart-line
-          icon_pack: fas
-          description: "<span style=\"font-size:90%\">미장위주, 금리인하, 실적발표, RSI 등 투자와 재테크에 관심</span>"
-        - name: 전자기기
-          icon: mobile-alt
-          icon_pack: fas
-          description: "<span style=\"font-size:90%\">노트북, 스마트폰 등의 분해 및 조립 가능</span>"
+        - name: Football
+          icon: "icons/football"
+        - name: Investment Strategies Using Alternative Data
+          icon: hero/currency-dollar
+        - name: Peppertones
+          icon: hero/musical-note
+
 
   - block: slider
     content:
@@ -155,27 +138,10 @@ sections:
       interval: 3000
 
 
-
   - block: collection
     content:
       id: section-1
-      title: Notifications & News
-      count: 3
-      offset: 0
-      order: desc
-      filters:
-        folders:
-          - notification
-          - post
-          - event
-    design:
-      view: compact
-      columns: '2'
-
-  - block: collection
-    content:
-      id: section-1
-      title: 내 프로젝트
+      title: 프로젝트
       count: 3
       offset: 0
       order: desc
@@ -186,40 +152,40 @@ sections:
       view: community/custom_card
       columns: '2'
 
-
-  - block: collection
+  - block: experience
     content:
-      title: 관심사 소개
-      count: 3
-      filters:
-        author: ''
-        category: ''
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
-      offset: 0
-      order: desc
-      page_type: publication
+      title: Biography
+      date_format: Jan 2006
+      items:
+        - title: Software Engineer
+          company: DPRE Co., Ltd.
+          company_logo: org-dpre
+          location: South Korea
+          date_start: '2024-01-07'
+          date_end: ''
+          description: |2-
+            Worked on various AI and machine learning projects.
+        - title: Legal Part
+          company: Hiconsy Co., Ltd.
+          company_logo: org-hiconsy
+          location: South Korea
+          date_start: '2020-01-01'
+          date_end: '2021-03-01'
+          description: |2-
+            Managed legal documentation and compliance matters.
     design:
-      view: community/custom_card
-      columns: '2'
-    advanced:
-      css_style: "text-align: center;"
-
-
-
+      columns: '1'
 
   - block: experience
     content:
       title: Education
       items:
-        - title: 이공계열
-          description: 전주고등학교
-          date_start: '2016-03-02'
+        - title: 전북대학교 IT정보공학과(재학)
+          description: 전북대학교 IT정보공학과
+          date_start: '2020-03-01'
+          date_end: '2025-12-31'
+        - title: 고등학교(졸업)
+          description: 대전가오고등학교
+          date_start: '2016-03-01'
           date_end: '2019-12-31'
-        - title: B.S. in (컴퓨터공학부)
-          description: 전북대학교 (JBNU) 컴퓨터공학부
-          date_start: '2020-03-02'
-          date_end: '2025-08-31'
-
 ---
