@@ -20,6 +20,10 @@ role: 학생
 organizations:
   - name: JBNU / DPRE
 
+interests:
+  - 데이터과학 / 인공지능
+  - 공간정보
+  - 세상의 모든 흥미로운 것들
 
 education:
   courses:

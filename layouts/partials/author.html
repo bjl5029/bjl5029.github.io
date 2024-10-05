@@ -1,5 +1,17 @@
 {{ if .Params.bio }}
-  <div class="author-bio">
-    {{ .Params.bio | markdownify }}
+<div class="grid-container">
+  <div class="education-section">
+    {{ range .Params.education.courses }}
+    <h3>{{ .course }}</h3>
+    <p>{{ .institution }} ({{ .year }})</p>
+    {{ end }}
   </div>
+
+  <div class="work-section">
+    {{ range .Params.work }}
+    <h3>{{ .position }}</h3>
+    <p>{{ .company_name }} ({{ .date_start }} - {{ .date_end | default "Present" }})</p>
+    {{ end }}
+  </div>
+</div>
 {{ end }}
