@@ -1,5 +1,5 @@
 ---
-title: Activity-Awards
+title: 수상내역
 type: landing
 
 sections:
