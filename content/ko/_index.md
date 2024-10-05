@@ -30,7 +30,11 @@ sections:
           description: 대전가오고등학교
           date_start: '2016-03-02'
           date_end: '2019-12-31'
-      work:
+
+  - block: experience
+    content:
+      title: work
+      items:
         - position: Director of Cloud Infrastructure
           company_name: GenCoin
           company_url: ''
