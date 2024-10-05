@@ -9,19 +9,18 @@ sections:
     content:
       title: Contact
       text: |-
-        <br> <span style="font-size:95%">전북대학교 컴퓨터공학부 20학번 강경태 </span> <br>
-      email: namwon420@naver.com
-      phone: 010-4672-1420
+        <br> <span style="font-size:95%"> 가정 방문의 날 </span> <br>
+      email: bjl5029@naver.com
+      phone: +82) 10-8784-2119
       address:
-        street: 전북대학교 공과대학 7호관 533호
-        city: 전주시
-        region: 전라북도
-        postcode: '54896'
+        street: 대전광역시 동부로10번길 55
+        city: 대전광역시
+        postcode: '34675'
         country: 대한민국
         country_code: KO
       coordinates:
-        latitude: '35.84601324617979'
-        longitude: '127.13444961966684'
+        latitude: '36.3169'
+        longitude: '127.4583'
       directions: 
       #contact_links:
       #  - icon: comments
