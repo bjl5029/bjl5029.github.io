@@ -5,23 +5,6 @@ appearance:
   font: native
   font_size: L
 
-# SEO and marketing settings
-marketing:
-  seo:
-    site_type: Person  # 사이트 유형 (Person, Organization 등)
-    local_business_type: ''  # 로컬 비즈니스 유형 (필요한 경우 지정)
-    org_name: '경태의 개발연습'  # 사이트 또는 개인/단체 이름
-    description: '전북대학교 컴퓨터공학부 강경태의 두번째 자기소개 사이트입니다.'  # 사이트 설명
-    twitter: 'GetResearchDev'  # 트위터 핸들 (있다면)
-    keywords: ['전북대학교', '컴퓨터공학', '개발자', '강경태', '웹 개발', 'AI 연구', '개인 블로그','전북대 강경태']  # 검색 엔진 최적화 키워드
-  analytics:
-    google_analytics: ''  # 구글 애널리틱스 추적 ID (있다면)
-    baidu_tongji: ''  # Baidu Analytics (있다면)
-    google_tag_manager: ''  # 구글 태그 관리자 (있다면)
-    microsoft_clarity: ''  # Microsoft Clarity (있다면)
-  verification:
-    google: 'foEXPySUXat0TT5_gVbfRU_Qr7K2dtrR69ChBilLuhs'  # 구글 사이트 인증 토큰
-    baidu: ''  # Baidu 사이트 인증 (있다면)
 
 # Open Graph and Social Media settings
 social_media:
@@ -44,13 +27,10 @@ header:
     show_theme_chooser: true
     show_translations: true
     highlight_active_link: false
-    logo:
-      text: ""  # Text for logo (if any)
-      filename: "logo.png"  # Ensure the file exists in `assets/media/`
     button:
       enable: true
-      text: "강경태"
-      url: "https://gyeongtaekang.github.io/"
+      text: 백정렬
+      url: "https://bjl5029.github.io/"
 
 # Site footer settings
 footer:
@@ -80,7 +60,7 @@ features:
   privacy_pack:
     enable: false  # Privacy pack
   repository:
-    url: 'https://github.com/gyeongtaekang/gyeongtaekang.github.io'
+    url: 'https://github.com/bjl5029/bjl5029.github.io'
     content_dir: content
     branch: main
   avatar:
@@ -124,11 +104,10 @@ publications:
   citation_style: apa
 
 # Personal information
-name: 강경태
+name: 백정렬
 role: 학생
-organization: 전북대학교 컴퓨터공학부
+organization: 전북대학교 컴퓨터인공지능학부
 organization_url: 'https://csai.jbnu.ac.kr/csai/index.do'
-email: 'namwon420@naver.com'
+email: 'bjl5029@gmail.com'
 
-# ogImage setting (Optional)
-ogImage: "assets/media/logo.png"  # Ensure the image exists at this path
+
