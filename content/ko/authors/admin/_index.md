@@ -20,20 +20,6 @@ role: 학생
 organizations:
   - name: JBNU / DPRE
 
-interests:
-  - 데이터과학 / 인공지능
-  - 공간정보
-  - 세상의 모든 흥미로운 것들
-
-education:
-  courses:
-    - course: 전북대학교 컴퓨터인공지능학부(재학)
-      institution: 전북대학교
-      year: 2020 - 2025
-    - course: 고등학교(졸업)
-      institution: 대전가오고등학교
-      year: 2016 - 2019
-
 work:
   - position: Software Engineer
     company_name: DPRE Co., Ltd.
@@ -47,6 +33,17 @@ work:
     company_logo: ''
     date_start: 2020-01-01
     date_end: 2021-03-01
+
+education:
+  courses:
+    - course: 전북대학교 컴퓨터인공지능학부(재학)
+      institution: 전북대학교
+      year: 2020 - 2025
+    - course: 고등학교(졸업)
+      institution: 대전가오고등학교
+      year: 2016 - 2019
+
+
     
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
