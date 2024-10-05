@@ -3,33 +3,29 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: 강경태 # Website name
+title: 백정렬 # Website name
 image:
   filename: "me.jpg"
   caption: "Image credit: [**Unsplash**](https://unsplash.com)"
-baseURL: 'https://gyeongtaekang.github.io/' # Website URL
+baseURL: 'https://bjl5029.github.io/' # Website URL
 
-# Site title and description
-title: "강경태 - 전북대학교 컴퓨터공학부 강경태의 개발 이야기"
-description: "전북대학교 컴퓨터공학부 강경태의 다양한 프로젝트와 연구 활동, 그리고 개발자 라이프를 공유하는 블로그입니다."
+
+description: "백정렬의 resume임."
 
 # Keywords for search engines
-keywords: ["전북대학교", "컴퓨터공학", "개발자", "강경태", "웹 개발", "AI 연구", "개인 블로그", "전북대 강경태"]
+keywords: [ "" ]
 
 # Author name
-author: "강경태"
+author: "백정렬"
 
 # Open Graph settings (for social media previews)
 params:
-  description: "전북대학교 컴퓨터공학부 강경태의 개발 이야기와 다양한 프로젝트 소개"
-  author: "강경태"
-  ogImage: "me.jpg"  # 사이트를 대표하는 이미지의 경로
+  description: "나는 백정렬"
+  author: "백정렬"
+  ogImage: "me.jpg"
   ogType: "website"
-  ogTitle: "곰탱 - 전북대학교 컴퓨터공학부 강경태의 개발 이야기"
+  ogTitle: "백정렬을 소개한다."
 
-instagram:
-  username: "gyeongtae1101"
-  url: "https://www.instagram.com/gyeongtae1101/"
 
 ############################
 ## LANGUAGE
@@ -51,7 +47,7 @@ paginate: 10
 enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
-ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
+ignoreFiles: [ \.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$ ]
 permalinks:
   authors: '/author/:slug/'
   tags: '/tag/:slug/'
@@ -59,8 +55,8 @@ permalinks:
   publication_types: '/publication-type/:slug/'
 disableAliases: true
 outputs:
-  home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
-  section: [HTML, RSS]
+  home: [ HTML, RSS, JSON, WebAppManifest, headers, redirects ]
+  section: [ HTML, RSS ]
 imaging:
   resampleFilter: lanczos
   quality: 75
