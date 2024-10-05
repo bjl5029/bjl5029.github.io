@@ -117,8 +117,7 @@ sections:
           date_end: '2024-08-31'
           description: |
             전주의 가맥지기로 활동하며 다양한 경험
-banner:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/)'
-  image: 'featured.jpg'
+    design:
+      columns: '2'
 
 ---
