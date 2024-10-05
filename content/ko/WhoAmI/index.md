@@ -1,6 +1,6 @@
 ---
-# Display name
 type: landing
+# Display name
 title: Baek Jeong Ryeol
 
 # Full name (for SEO)
