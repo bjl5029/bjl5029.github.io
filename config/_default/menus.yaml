@@ -1,21 +1,44 @@
-# Navigation Links
-#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-#     desired widget in your `content/home/` folder.
-#   The weight parameter defines the order that the links will appear in.
-
 main:
-  - name: Bio
-    url: /
-    weight: 10
-  - name: Experience
-    url: experience/
-    weight: 20
+  - name: WhoAmI
+    url: WhoAmI
+    weight: 200
+
+  - name: Biography
+    url: none
+    weight: 330
+  - parent: Biography
+    name: Education
+    url: /Biography/Education/
+    weight: 340
+  - parent: Biography
+    name: Awards
+    url: /Biography/Awards/
+    weight: 350
+
   - name: Projects
-    url: projects/
-    weight: 30
+    url: project
+    weight: 430
+  - parent: Projects
+    name: Project in Progress
+    url: /project/ing/
+    weight: 440
+  - parent: Projects
+    name: Finished Project
+    url: /project/ed/
+    weight: 450
+
   - name: Blog
-    url: post/
-    weight: 40
+    url: publication
+    weight: 500
+  - parent: Blog
+    name: Study
+    url: /bulletin/study
+    weight: 510
+  - parent: Blog
+    name: Reflection on Life
+    url: /bulletin/life
+    weight: 520
+
   - name: Contact
-    url: contact/
-    weight: 50
+    url: contact
+    weight: 800

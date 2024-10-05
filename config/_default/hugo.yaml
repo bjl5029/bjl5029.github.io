@@ -3,16 +3,39 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-# Website name
-title: Hugo Academic CV Theme
-# Website URL
-baseURL: 'https://example.com/'
+title: 강경태 # Website name
+image:
+  filename: "me.jpg"
+  caption: "Image credit: [**Unsplash**](https://unsplash.com)"
+baseURL: 'https://gyeongtaekang.github.io/' # Website URL
+
+# Site title and description
+title: "강경태 - 전북대학교 컴퓨터공학부 강경태의 개발 이야기"
+description: "전북대학교 컴퓨터공학부 강경태의 다양한 프로젝트와 연구 활동, 그리고 개발자 라이프를 공유하는 블로그입니다."
+
+# Keywords for search engines
+keywords: ["전북대학교", "컴퓨터공학", "개발자", "강경태", "웹 개발", "AI 연구", "개인 블로그", "전북대 강경태"]
+
+# Author name
+author: "강경태"
+
+# Open Graph settings (for social media previews)
+params:
+  description: "전북대학교 컴퓨터공학부 강경태의 개발 이야기와 다양한 프로젝트 소개"
+  author: "강경태"
+  ogImage: "me.jpg"  # 사이트를 대표하는 이미지의 경로
+  ogType: "website"
+  ogTitle: "곰탱 - 전북대학교 컴퓨터공학부 강경태의 개발 이야기"
+
+instagram:
+  username: "gyeongtae1101"
+  url: "https://www.instagram.com/gyeongtae1101/"
 
 ############################
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: en
+defaultContentLanguage: ko
 hasCJKLanguage: false
 defaultContentLanguageInSubdir: false
 removePathAccents: true
@@ -20,7 +43,6 @@ removePathAccents: true
 ############################
 ## ADVANCED
 ############################
-
 build:
   writeStats: true
 enableGitInfo: false
@@ -32,28 +54,38 @@ footnotereturnlinkcontents: <sup>^</sup>
 ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
 permalinks:
   authors: '/author/:slug/'
+  tags: '/tag/:slug/'
+  categories: '/category/:slug/'
+  publication_types: '/publication-type/:slug/'
 disableAliases: true
 outputs:
-  home: [HTML, RSS, headers, redirects, backlinks]
+  home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
   section: [HTML, RSS]
 imaging:
   resampleFilter: lanczos
-  quality: 80
+  quality: 75
   anchor: smart
 timeout: 600000
 taxonomies:
-  author: authors
   tag: tags
+  category: categories
   publication_type: publication_types
+  author: authors
 markup:
   _merge: deep
-  highlight:
-    lineNos: false
-  goldmark:
-    renderer:
-      unsafe: true
-
+related:
+  threshold: 80
+  includeNewer: true
+  toLower: true
+  indices:
+    - name: tags
+      weight: 100
+    - name: categories
+      weight: 70
 security:
   _merge: deep
 sitemap:
-  _merge: deep
+  filename: sitemap.xml
+  changefreq: "daily"
+  priority: 0.5
+

@@ -1,0 +1,49 @@
+// 예시: 파스텔 블루 사용
+$primary-bg-color: #A9CCE3;
+$primary-text-color: #333333;
+$link-color: #007BFF;
+$header-bg-color: #333333;
+$header-text-color: #ffffff;
+
+// 페이지 헤더 정렬
+.universal-wrapper h1 {
+  text-align: center;
+}
+
+// CTA 버튼 중앙 정렬
+.cta-group {
+  justify-content: center;
+}
+
+// 전체 배경색 및 텍스트 색상
+body {
+  background-color: $primary-bg-color; // 하늘색 적용
+  color: $primary-text-color;
+}
+
+// 링크 색상
+a {
+  color: $link-color;
+}
+
+// 헤더와 네비게이션의 배경 및 텍스트 색상
+header, nav {
+  background-color: $header-bg-color;
+  color: $header-text-color;
+}
+
+/* 기본 버튼 스타일 */
+.cta-group a {
+  background-color: #3e9a51; /* 기본 배경색 */
+  color: #fff; /* 기본 텍스트 색 */
+  transition: background-color 0.3s ease; /* 호버 효과의 부드러운 전환 */
+}
+
+/* 호버 시 노란색으로 변경 */
+.cta-group a:hover {
+  background-color: #FFD700; /* 노란색 */
+}
+
+.justify-text {
+  text-align: justify;
+}

@@ -1,46 +1,58 @@
-# SITE SETUP
-# Guide: https://docs.hugoblox.com/tutorial/
-# Documentation: https://docs.hugoblox.com/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
-
-# Appearance
-
+# Appearance settings
 appearance:
-  theme_night: minimal
-  theme_day: minimal
+  theme_night: custom
+  theme_day: custom
   font: native
   font_size: L
 
-
+# SEO and marketing settings
 marketing:
   seo:
-    site_type: Organization
-    local_business_type: ''
-    org_name: '100sorting'
-    description: '백정렬 in Jeonbuk National Univ.'
+    site_type: Person  # 사이트 유형 (Person, Organization 등)
+    local_business_type: ''  # 로컬 비즈니스 유형 (필요한 경우 지정)
+    org_name: '경태의 개발연습'  # 사이트 또는 개인/단체 이름
+    description: '전북대학교 컴퓨터공학부 강경태의 두번째 자기소개 사이트입니다.'  # 사이트 설명
+    twitter: 'GetResearchDev'  # 트위터 핸들 (있다면)
+    keywords: ['전북대학교', '컴퓨터공학', '개발자', '강경태', '웹 개발', 'AI 연구', '개인 블로그','전북대 강경태']  # 검색 엔진 최적화 키워드
   analytics:
-    google_analytics: ''
-    baidu_tongji: ''
-    google_tag_manager: ''
-    microsoft_clarity: ''
+    google_analytics: ''  # 구글 애널리틱스 추적 ID (있다면)
+    baidu_tongji: ''  # Baidu Analytics (있다면)
+    google_tag_manager: ''  # 구글 태그 관리자 (있다면)
+    microsoft_clarity: ''  # Microsoft Clarity (있다면)
   verification:
-    google: ''
-    baidu: ''
+    google: 'foEXPySUXat0TT5_gVbfRU_Qr7K2dtrR69ChBilLuhs'  # 구글 사이트 인증 토큰
+    baidu: ''  # Baidu 사이트 인증 (있다면)
 
-# Site header
+# Open Graph and Social Media settings
+social_media:
+  facebook:
+    app_id: ''
+    page_id: ''
+  twitter:
+    card_type: summary_large_image
+    site: '@GetResearchDev'
 
+# Site header settings
 header:
   navbar:
     enable: true
     align: c
     show_logo: true
-    show_language: false
+    show_language: true
     show_day_night: true
     show_search: true
+    show_theme_chooser: true
+    show_translations: true
     highlight_active_link: false
+    logo:
+      text: ""  # Text for logo (if any)
+      filename: "logo.png"  # Ensure the file exists in `assets/media/`
+    button:
+      enable: true
+      text: "강경태"
+      url: "https://gyeongtaekang.github.io/"
 
-# Site footer
-
+# Site footer settings
 footer:
   copyright:
     notice: '© {year} Me. This work is licensed under {license}'
@@ -50,27 +62,25 @@ footer:
       share_alike: true
       allow_commercial: false
 
-# Localization
-
+# Localization settings
 locale:
   date_format: 'Jan 2, 2006'
   time_format: '3:04 PM'
   address_format: en-us
 
-# Site features
-
+# Site features settings
 features:
   syntax_highlighter:
-    enable: false
+    enable: true  # Enable syntax highlighting
     extra_languages:
       - r
       - latex
   math:
-    enable: false
+    enable: false  # Math rendering
   privacy_pack:
-    enable: false
+    enable: false  # Privacy pack
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: 'https://github.com/gyeongtaekang/gyeongtaekang.github.io'
     content_dir: content
     branch: main
   avatar:
@@ -89,7 +99,7 @@ features:
       category: ''
       category_id: ''
   search:
-    provider: wowchemy
+    provider: wowchemy  # Search provider
     algolia:
       app_id: ''
       api_key: ''
@@ -100,8 +110,7 @@ features:
     api_key: ''
     zoom: 15
 
-# Extensions
-
+# Extensions settings
 extensions:
   decap_cms:
     branch: main
@@ -109,8 +118,17 @@ extensions:
   academicons:
     enable: true
 
-# Citation style
-
+# Citation style for publications
 publications:
   date_format: January 2006
   citation_style: apa
+
+# Personal information
+name: 강경태
+role: 학생
+organization: 전북대학교 컴퓨터공학부
+organization_url: 'https://csai.jbnu.ac.kr/csai/index.do'
+email: 'namwon420@naver.com'
+
+# ogImage setting (Optional)
+ogImage: "assets/media/logo.png"  # Ensure the image exists at this path
