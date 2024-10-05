@@ -19,9 +19,6 @@ sections:
           position: center
           parallax: false
 
-
-
-
   - block: experience
     content:
       title: Education
