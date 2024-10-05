@@ -20,19 +20,7 @@ sections:
           parallax: false
 
 
-  - block: collection
-    content:
-      id: section-1
-      title: 내 프로젝트
-      count: 3
-      offset: 0
-      order: desc
-      filters:
-        folders:
-          - field
-    design:
-      view: community/custom_card
-      columns: '2'
+
 
   - block: experience
     content:
@@ -45,6 +33,29 @@ sections:
           description: 대전가오고등학교
           date_start: '2016-03-02'
           date_end: '2019-12-31'
+      work:
+        - position: Director of Cloud Infrastructure
+          company_name: GenCoin
+          company_url: ''
+          company_logo: ''
+          date_start: 2021-01-01
+          date_end: ''
+          summary: |2-
+            Responsibilities include:
+            - lorem ipsum dolor sit amet, consectetur adipiscing elit
+            - lorem ipsum dolor sit amet, consectetur adipiscing elit
+            - lorem ipsum dolor sit amet, consectetur adipiscing elit
+        - position: Backend Software Engineer
+          company_name: X
+          company_url: ''
+          company_logo: ''
+          date_start: 2016-01-01
+          date_end: 2020-12-31
+          summary: |
+            Responsibilities include:
+            - Migrated infrastructure to a new data center
+            - lorem ipsum dolor sit amet, consectetur adipiscing elit
+            - lorem ipsum dolor sit amet, consectetur adipiscing elit
 
   - block: slider
     content:
