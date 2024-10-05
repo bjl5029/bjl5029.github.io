@@ -23,27 +23,47 @@ sections:
   - block: markdown
     content:
       title: About me
-      text: |-
+      text: |- 
         <span class="justified-text" style="color: gray;text-align: justify;">
-        컄ㅋㅋㅋ.
+        안녕하세요! 저는 전북대학교 컴퓨터공학부 학생으로, 인공지능(AI)과 데이터 분석에 관심이 많습니다. 원래 의류학을 전공하다가 새로운 도전을 위해 컴퓨터공학으로 전과하였고, 그 이후 다양한 프로젝트와 공모전에 참여하며 성장해 왔습니다. 현재는 의료 AI 분야에서 활발하게 활동하며 기술과 혁신을 통해 사회에 긍정적인 변화를 가져오고자 노력하고 있습니다. 끊임없이 배우고 도전하며, 서울대 의료인공지능 연구실로 진학하는것이 저의 목표입니다.
         </span>
 
   - block: features
     id: features
     content:
-      title: "<span style=\"font-size:75%\">백정렬 관심사</span>"
-      text: "나는 어디에 관심 있느냐<br><br>"
+      title: "<span style=\"font-size:75%\">강경태의 관심사</span>"
+      text: "저는 다음과 같은 주제에 관심이 있습니다.<br><br>"
       items:
-        - name: 축구
+        - name: 인공지능(AI)
+          icon: brain
+          icon_pack: fas
+          description: "<span style=\"font-size:90%\">기계학습, 딥러닝, RNN,FCN 컴퓨터 비전 등등</span>"
+        - name: 런닝
           icon: running
           icon_pack: fas
-        - name: 대안데이터를 활용한 투자 전략
-          icon: running
-          icon_pack: fas
-        - name: 페퍼톤스
+          description: "<span style=\"font-size:90%\">하루에 10km씩 런닝하며 체중감소</span>"
+        - name: 노래
           icon: music
           icon_pack: fas
+          description: "<span style=\"font-size:90%\">꾀꼬리 같은 맑은 보이스의 소유자로서, 혼코노러버</span>"
+        - name: 의료
+          icon: hospital
+          icon_pack: fas
+          description: "<span style=\"font-size:90%\">의료지식을 공부하며 의료 인공지능과의 결합 고민</span>"
+        - name: 주식
+          icon: chart-line
+          icon_pack: fas
+          description: "<span style=\"font-size:90%\">미장위주, 금리인하, 실적발표, RSI 등 투자와 재테크에 관심</span>"
+        - name: 전자기기
+          icon: mobile-alt
+          icon_pack: fas
+          description: "<span style=\"font-size:90%\">노트북, 스마트폰 등의 분해 및 조립 가능</span>"
 
+
+  - block: features
+    content:
+      title: "<span style=\"font-size:70%\">강경태의 포트폴리오 사이트</span>"
+      text: "<br><span style=\"font-size:125%\">강경태의 포트폴리오 사이트에 오신 것을 환영합니다.</span> <br><br>{{% cta cta_link=\"./field/\" cta_text=\"더보기 →\" %}}"
 
   - block: slider
     content:
@@ -141,10 +161,27 @@ sections:
       interval: 3000
 
 
+
   - block: collection
     content:
       id: section-1
-      title: 프로젝트
+      title: Notifications & News
+      count: 3
+      offset: 0
+      order: desc
+      filters:
+        folders:
+          - notification
+          - post
+          - event
+    design:
+      view: compact
+      columns: '2'
+
+  - block: collection
+    content:
+      id: section-1
+      title: 내 프로젝트
       count: 3
       offset: 0
       order: desc
@@ -155,40 +192,50 @@ sections:
       view: community/custom_card
       columns: '2'
 
-  - block: experience
+
+  - block: collection
     content:
-      title: Biography
-      date_format: Jan 2006
-      items:
-        - title: Software Engineer
-          company: DPRE Co., Ltd.
-          company_logo: org-dpre
-          location: South Korea
-          date_start: '2024-01-07'
-          date_end: ''
-          description: |2-
-            Worked on various AI and machine learning projects.
-        - title: Legal Part
-          company: Hiconsy Co., Ltd.
-          company_logo: org-hiconsy
-          location: South Korea
-          date_start: '2020-01-01'
-          date_end: '2021-03-01'
-          description: |2-
-            Managed legal documentation and compliance matters.
+      title: 관심사 소개
+      count: 3
+      filters:
+        author: ''
+        category: ''
+        exclude_featured: false
+        publication_type: ''
+        tag: ''
+      offset: 0
+      order: desc
+      page_type: publication
     design:
-      columns: '1'
+      view: community/custom_card
+      columns: '2'
+    advanced:
+      css_style: "text-align: center;"
+
+
+
 
   - block: experience
     content:
       title: Education
       items:
-        - title: 전북대학교 IT정보공학과(재학)
-          description: 전북대학교 IT정보공학과
-          date_start: '2020-03-01'
-          date_end: '2025-12-31'
-        - title: 고등학교(졸업)
-          description: 대전가오고등학교
-          date_start: '2016-03-01'
+        - title: 이공계열
+          description: 전주고등학교
+          date_start: '2016-03-02'
           date_end: '2019-12-31'
+        - title: B.S. in (컴퓨터공학부)
+          description: 전북대학교 (JBNU) 컴퓨터공학부
+          date_start: '2020-03-02'
+          date_end: '2025-08-31'
+
+  - block: tag_cloud
+    content:
+      title: My tags
+      subtitle: ''
+      text: 사용한 태그들
+      taxonomy: tags
+      count: 0
+    design:
+      font_size_min: 0.7
+      font_size_max: 2.0
 ---
