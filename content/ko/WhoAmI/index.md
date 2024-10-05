@@ -1,78 +1,143 @@
 ---
 # Display name
-title: 강경태
+title: Baek Jeong Ryeol
 
-# Full Name (for SEO)
-first_name: gyeongtae
-last_name: Kang
-
-# Username (this should match the folder name)
-authors:
-  - admin
+# Full name (for SEO)
+first_name: JeongRyeol
+last_name: Baek
 
 # Is this the primary user of the site?
 superuser: true
 
-# Role/position
-role: 대학생
-
-# Organizations/Affiliations
-organizations:
-  - name: 경태의 개발연습
-    url: 'https://gyeongta1101.netlify.app'
-
-# Short bio (displayed in user profile at end of posts)
-bio: 전북대학교 컴퓨터공학부 학생으로, 의류학과에서 전과해 AI와 데이터 분석에 열정을 쏟고 있습니다. 전북대 아이디어 해커톤 최우수상, 창업 아이디어 메이커톤 베스트 피칭상 등 다양한 수상을 했으며, 현재는 이경수 교수님의 의료 인공지능 연구실에서 활동 중입니다. 서비스직 경험과 학업 성과를 바탕으로 기술과 혁신을 통해 사회에 기여하고자 합니다.(admin)
-
-interests:
-  - 인공지능 및 딥러닝
-  - 데이터 분석 및 빅데이터
-  - 소프트웨어 개발 및 프로그래밍
-  - 창업 및 아이디어 구현
-  - 사회 문제 해결 및 지속가능성
-  - 서비스 경험 및 소통
-
-education:
-  courses:
-    - course: 컴퓨터공학부
-      institution: 전북대학교(JBNU)
-      year: 2020 - 2025
-    - course: 일반계(이공계열)
-      institution: 전주고등학교
-      year: 2016 - 2019
-
-# Social/Academic Networking
-# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
-#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "#contact" for contact widget.
-social:
-  - icon: instagram
-    icon_pack: fab
-    link: https://www.instagram.com/gyeongtae1101/
-  - icon: github
-    icon_pack: fab
-    link: https://github.com/gyeongtaekang
-  - icon: cv
-    icon_pack: ai
-    link: 'https://gyeongtaekang.github.io/publication/0020-fine-grained-binary-object-segmentation-in-remote-sensing-imagery-via-path-selective-test-time-adaptation/자기소개.pdf'
-# Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
-
-# Enter email to display Gravatar (if Gravatar enabled in Config)
-email: 'namwon420@naver.com'
-
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 
-# Organizational groups that you belong to (for People widget)
-#   Set this to `[]` or comment out if you are not using People widget.
-user_groups:
-  - admin
+# Role/position/tagline
+role: Student
+
+# Organizations/Affiliations to display in Biography blox
+organizations:
+  - name: JBNU / DPRE
+
+# Social network links
+# Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
+profiles:
+  - icon: at-symbol
+    url: 'mailto:bjl5029@gmail.com'
+    label: E-mail Me
+  - icon: brands/github
+    url: https://github.com/bjl5029
 
 
+interests:
+  - DataScience/ML/AI
+  - Investment Strategies Using Alternative Data
+
+education:
+  - area: BSc Computer and Artificial Intelligence
+    institution: Jeonbuk National University
+    date_start: 2020-03-01
+    summary: |
+      Courses included:
+      - CS      
+      - ML / AI
+      - Many interesting things
+  - area: DataScience Bootcamp
+    institution: Euclidsoft Co., Ltd.
+    date_start: 2022-08-01
+    date_end: 2023-01-01
+
+work:
+  - position: Software Engineer
+    company_name: DPRE Co., Ltd.
+    company_url: http://dpre.co.kr/
+    company_logo: ''
+    date_start: 2024-01-07
+
+  - position: Legal Part
+    company_name: Hiconsy Co., Ltd.
+    company_url: https://www.hiconsy.com/
+    company_logo: ''
+    date_start: 2020-01-01
+    date_end: 2021-03-01
+
+# Skills
+# Add your own SVG icons to `assets/media/icons/`
+skills:
+  - name: Technical Skills
+    items:
+      - name: Python
+        description: ''
+        percent: 80
+        icon: devicon/python
+      - name: PyTorch
+        description: ''
+        percent: 60
+        icon: devicon/pytorch
+      - name: C++
+        description: ''
+        percent: 40
+        icon: devicon/cplusplus
+  - name: Some of my other interests
+    color: '#eeac02'
+    color_border: '#f0bf23'
+    items:
+      - name: Football
+        description: ''
+        percent: 100
+        icon: "icons/football"
+      - name: Investment Strategies Using Alternative Data
+        description: ''
+        percent: 80
+        icon: hero/currency-dollar
+      - name: Peppertones
+        description: ''
+        percent: 80
+        icon: hero/musical-note
+
+languages:
+  - name: Korean
+    percent: 100
+  - name: English
+    percent: 50
+
+# Awards.
+#   Add/remove as many awards below as you like.
+#   Only `title`, `awarder`, and `date` are required.
+#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
+awards:
+  - title: 제2회 재난안전데이터 활용 창업경진대회
+    url: https://www.mois.go.kr/synap/skin/doc.html?fn=BBS_2024050104084346001&rs=/synapFile/202409/&synapUrl=%2Fsynap%2Fskin%2Fdoc.html%3Ffn%3DBBS_2024050104084346001%26rs%3D%2FsynapFile%2F202409%2F&synapMessage=%EC%A0%95%EC%83%81
+    date: '2024-08-05'
+    awarder: 행정안전부
+    summary: |
+      행정안전부 장관상 수상
+
+  - title: GREAT Chat Gpt 활용 아이디어 경진대회
+    date: '2024-02-02'
+    awarder: 지역선도대학육성사업단
+    summary: |
+      장려상 수상
+
+  - title: 제1회 SW 창업 아이디어 경진대회
+    date: '2023-12-21'
+    awarder: 전북대학교
+    summary: |
+      장려상 수상
+
+  - title: 제3회 소외계층을 위한 AI활용 아이디어 공모전
+    date: '2023-12-20'
+    awarder: 교육부
+    summary: |
+      교육부 장관상 수상
+
+  - title: 모바일 앱 개발 해커톤
+    date: '2023-08-30'
+    awarder: 전남대학교
+    summary: |
+      장려상 수상
 ---
 
-전북대학교 컴퓨터공학부 학생으로, 의류학과에서 전과해 AI와 데이터 분석에 열정을 쏟고 있습니다. 전북대 아이디어 해커톤 최우수상, 창업 아이디어 메이커톤 베스트 피칭상 등 다양한 수상을 했으며, 현재는 이경수 교수님의 의료 인공지능 연구실에서 활동 중입니다. 서비스직 경험과 학업 성과를 바탕으로 기술과 혁신을 통해 사회에 기여하고자 합니다.
+## About Me
+
+I am currently studying Computer Science and Big Data/AI at JBNU and working at DPRE.
