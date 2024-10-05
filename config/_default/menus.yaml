@@ -1,6 +1,6 @@
 main:
   - name: Who Am I
-    url: WhoAmI
+    url: whoami
     weight: 200
 
   - name: Biography
