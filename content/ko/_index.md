@@ -60,7 +60,6 @@ sections:
         - title: 전북대학교 컴퓨터인공지능학부(재학)
           description: 전북대학교 컴퓨터인공지능학부(it정보공학과)
           date_start: '2020-03-02'
-          date_end: '2025-12-31'
         - title: 고등학교(졸업)
           description: 대전가오고등학교
           date_start: '2016-03-02'
