@@ -1,11 +1,22 @@
 ---
-title: Projects
+title: 'Projects'
+date: 2024-05-19
+type: landing
 
-# Listing view
-view: compact
+design:
+  # Section spacing
+  spacing: '5rem'
 
-# Optional header image (relative to `assets/media/` folder).
-banner:
-  caption: ''
-  image: ''
+# Page sections
+sections:
+  - block: collection
+    content:
+      title: Projects
+      filters:
+        folders:
+          - project/ed
+    design:
+      view: article-grid
+      fill_image: false
+      columns: 3
 ---

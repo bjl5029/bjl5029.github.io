@@ -59,12 +59,6 @@ sections:
           icon_pack: fas
           description: "<span style=\"font-size:90%\">노트북, 스마트폰 등의 분해 및 조립 가능</span>"
 
-
-  - block: features
-    content:
-      title: "<span style=\"font-size:70%\">강경태의 포트폴리오 사이트</span>"
-      text: "<br><span style=\"font-size:125%\">강경태의 포트폴리오 사이트에 오신 것을 환영합니다.</span> <br><br>{{% cta cta_link=\"./field/\" cta_text=\"더보기 →\" %}}"
-
   - block: slider
     content:
       slides:
@@ -228,14 +222,4 @@ sections:
           date_start: '2020-03-02'
           date_end: '2025-08-31'
 
-  - block: tag_cloud
-    content:
-      title: My tags
-      subtitle: ''
-      text: 사용한 태그들
-      taxonomy: tags
-      count: 0
-    design:
-      font_size_min: 0.7
-      font_size_max: 2.0
 ---

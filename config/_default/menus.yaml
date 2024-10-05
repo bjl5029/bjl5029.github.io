@@ -1,5 +1,5 @@
 main:
-  - name: WhoAmI
+  - name: Who Am I
     url: WhoAmI
     weight: 200
 
