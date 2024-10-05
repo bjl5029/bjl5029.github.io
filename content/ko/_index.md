@@ -34,12 +34,15 @@ sections:
       title: "<span style=\"font-size:75%\">백정렬 관심사</span>"
       text: "나는 어디에 관심 있느냐<br><br>"
       items:
-        - name: Football
-          icon: "icons/football"
-        - name: Investment Strategies Using Alternative Data
-          icon: hero/currency-dollar
-        - name: Peppertones
-          icon: hero/musical-note
+        - name: 축구
+          icon: running
+          icon_pack: fas
+        - name: 대안데이터를 활용한 투자 전략
+          icon: running
+          icon_pack: fas
+        - name: 페퍼톤스
+          icon: music
+          icon_pack: fas
 
 
   - block: slider
