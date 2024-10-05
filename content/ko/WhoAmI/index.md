@@ -1,5 +1,6 @@
 ---
 # Display name
+type: landing
 title: Baek Jeong Ryeol
 
 # Full name (for SEO)
