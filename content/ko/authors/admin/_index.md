@@ -14,7 +14,7 @@ authors:
 superuser: true
 
 # Role/position
-role: 대학생
+role: 학생
 
 # Organizations/Affiliations
 organizations:
@@ -27,13 +27,13 @@ interests:
 
 education:
   courses:
-    - course: BSc Computer and Artificial Intelligence
-      institution: Jeonbuk National University
+    - course: 전북대학교 컴퓨터인공지능학부(재학)
+      institution: 전북대학교
       year: 2020 - 2025
-    - course: DataScience Bootcamp
-      institution: Euclidsoft Co., Ltd.
+    - course: 데이터 사이언스 부트캠프
+      institution: 주식회사 유클리드소프트
       year: 2022 - 2023
-    - course: 고등학교
+    - course: 고등학교(졸업)
       institution: 대전가오고등학교
       year: 2016 - 2019
 
@@ -60,6 +60,10 @@ user_groups:
 
 ---
 
+##
+
 ## About Me
 
-I am currently studying Computer Science and Big Data/AI at JBNU and working at DPRE.
+##
+
+전북대학교 컴퓨터인공지능학부에 재학중이며, 주식회사 디프리에서 일하고 있습니다.
