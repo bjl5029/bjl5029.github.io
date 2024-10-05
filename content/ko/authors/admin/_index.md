@@ -21,18 +21,15 @@ organizations:
   - name: JBNU / DPRE
 
 interests:
-  - DataScience/ML/AI
-  - Investment Strategies Using Alternative Data
-  - The diverse and fascinating things of the world
+  - 데이터과학 / 인공지능  
+  - 공간정보
+  - 세상의 모든 흥미로운 것들
 
 education:
   courses:
     - course: 전북대학교 컴퓨터인공지능학부(재학)
       institution: 전북대학교
       year: 2020 - 2025
-    - course: 데이터 사이언스 부트캠프
-      institution: 주식회사 유클리드소프트
-      year: 2022 - 2023
     - course: 고등학교(졸업)
       institution: 대전가오고등학교
       year: 2016 - 2019
