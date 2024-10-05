@@ -18,7 +18,7 @@ sections:
         - name: 축구
           icon: running
           icon_pack: fas
-          description: "<span style=\"font-size:90%\">용대FC의 LW/LB</span>"
+          description: "<span style=\"font-size:90%\">용대FC의 영원한 LW</span>"
         - name: 대안 데이터를 활용한 투자 전략
           icon: chart-line
           icon_pack: fas
@@ -26,20 +26,7 @@ sections:
         - name: 페퍼톤스
           icon: music
           icon_pack: fas
-          description: "<span style=\"font-size:90%\">Superfantastic</span>"
-
-
-  - block: experience
-    content:
-      title: Education
-      items:
-        - title: 전북대학교 컴퓨터인공지능학부(재학)
-          description: 전북대학교 컴퓨터인공지능학부(it정보공학과)
-          date_start: '2020-03-02'
-        - title: 고등학교(졸업)
-          description: 대전가오고등학교
-          date_start: '2016-03-02'
-          date_end: '2019-12-31'
+          description: "<span style=\"font-size:90%\">인생은 Superfantastic</span>"
 
 
     design:
