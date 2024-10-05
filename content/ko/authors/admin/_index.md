@@ -23,6 +23,7 @@ organizations:
 interests:
   - DataScience/ML/AI
   - Investment Strategies Using Alternative Data
+  - The diverse and fascinating things of the world
 
 education:
   courses:
